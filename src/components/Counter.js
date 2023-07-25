@@ -10,11 +10,11 @@ const Counter = () => {
         setCount(count-1)
     }
   return (
-    <View>
-      <Text style={styles.textStyles}>The Count value is -  {count} </Text>
+    <View id='parent' testID='parentTestId'>
+      <Text id='countValue' testID='countValueTestId' style={styles.textStyles}>The Count value is -  {count} </Text>
         <View style={styles.buttonStyles}>
-            <Button onPress={handleIncrement} title='Increment'/>
-            <Button onPress={handleDecrement} title='Decrement'/>
+            <Button id="increment" testID='incrementTestId' onPress={handleIncrement} title='Increment'/>
+            <Button id="decrement" testID='decrementTestId' onPress={handleDecrement} title='Decrement'/>
         </View>       
     </View>
   )

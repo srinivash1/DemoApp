@@ -17,7 +17,7 @@ import Counter from './src/components/Counter';
 function App(): JSX.Element {
   return (
     <SafeAreaView style={styles.container}>
-       <View>
+       <View id='mainView' testID='mainTestIdView'>
           <Counter />
        </View>
     </SafeAreaView>
